@@ -1,22 +1,24 @@
 For do this task, here are all the steps :
 
-1.....
-Write the script (hello_world.sh, for ex) :
+1...................
+Write the script baxh (hello_world.sh, for ex) that contains:
 #!/bin/bash
 echo "Hello World
 
-2.........
+2..................
 Journaliser l'exécution en ajoutant des lignes de journalisation dans le script :
 #!/bin/bash
+echo "Hello World
+
 echo "$(date): Script executed successfully" >> journal.log
 
-3........
+3......................
 Exécutez le script dans un autre terminal :
 ./hello.sh
 => [ec2-user@ip-172-31-21-237 ~]$ ./hello.sh
 Hello World
 
-4.....
+4.................................
 Vérifier les logs en temps réel avec tail -f (ou tail -n 20 -f execution.log pour voir les 20 dernières lignes) :
 tail -f journal.log
 => [ec2-user@ip-172-31-21-237 ~]$ tail -f journalh.log
