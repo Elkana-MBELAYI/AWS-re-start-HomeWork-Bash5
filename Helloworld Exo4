@@ -1,0 +1,31 @@
+For do this task, here are all the steps :
+
+1.....
+Write the script (hello_world.sh, for ex) :
+#!/bin/bash
+echo "Hello World
+
+2.........
+Journaliser l'exécution en ajoutant des lignes de journalisation dans le script :
+#!/bin/bash
+echo "$(date): Script executed successfully" >> journal.log
+
+3........
+Exécutez le script dans un autre terminal :
+./hello.sh
+=> [ec2-user@ip-172-31-21-237 ~]$ ./hello.sh
+Hello World
+
+4.....
+Vérifier les logs en temps réel avec tail -f (ou tail -n 20 -f execution.log pour voir les 20 dernières lignes) :
+tail -f journal.log
+=> [ec2-user@ip-172-31-21-237 ~]$ tail -f journalh.log
+Tue Jul  2 01:38:08 UTC 2024: Script executed successfully
+Tue Jul  2 01:38:13 UTC 2024: Script executed successfully
+Tue Jul  2 01:38:15 UTC 2024: Script executed successfully
+
+-----------------------
+Vous devriez voir le message "Hello World!" affiché dans le terminal, ainsi que les entrées de journalisation dans le fichier journal.log, 
+indiquant la date de l'exécution du script et le message à côté => Script executed successfully comme pour mon cas. Merci
+
+Elkach .
